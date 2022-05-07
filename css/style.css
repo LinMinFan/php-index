@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 150px;
+}
+.menu>a{
+    display: block;
+    border-style: double;
+    border-radius: 10px;
+    border: 5px double #FFFFFF;
+    width: calc(100%/6);
+    height: 35px;
+    line-height: 25px;
+    margin: 10px 5px 0;
+    text-decoration: none;
+    text-align: center;
+    background-color: #5D89B4;
+    color: #2C4A69;
+    box-shadow: 0 3px 5px #000000;
+    transition: 1s;
+}
+.menu>a:hover{
+    background-color: #5E5BC2;
+    color: #9ECFFF;
+}
