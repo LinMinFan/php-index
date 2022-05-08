@@ -1,9 +1,10 @@
 *{
     box-sizing: border-box;
 }
-h1{
+.title{
     text-align: center;
-    margin-top: 50px;
+    font-size: 200px;
+    margin: 20px 0;
 }
 .menu{
     display: flex;
