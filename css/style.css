@@ -1,10 +1,13 @@
 *{
     box-sizing: border-box;
+    font-family: '標楷體';
+    font-weight: 500;
 }
 .title{
     text-align: center;
-    font-size: 200px;
+    font-size: 60px;
     margin: 20px 0;
+    text-shadow: 5px 5px 5px #000000;
 }
 .menu{
     display: flex;
@@ -20,8 +23,8 @@
     border-radius: 10px;
     border: 1px solid #FFFFFF;
     width: 25%;
-    height: 35px;
-    line-height: 35px;
+    height: 40px;
+    line-height: 40px;
     margin: 15px 5px 0;
     text-decoration: none;
     text-align: center;
