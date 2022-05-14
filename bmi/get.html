@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get post傳值</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h2>使用網頁表單元件時，需要註明要傳送的目的地及使用的傳送方式:</h2>
+    <!-- 顯示在網址上,action(api/get/book/1?) name(book)= method(GET) 適合較無隱私的資料 可直接放在網址中傳遞(query string) -->
+    <!-- <form action='api/get/book/1' method='GET'>
+        <input type='text' name='book' value='GET'>
+        <input type='submit' value='送出'>
+    </form>
+    <br> -->
+    <!-- 經過編碼傳輸，不會顯示在網址上,action(api/get/book/1) 資料長度較長 可透過表單方式傳送資料 -->
+    <!-- <form action='api/get/book/1' method='POST'>
+        <input type='text' name='book' value='POST'>
+        <input type='submit' value='送出'>
+    </form>
+    <br> -->
+    <!-- 使用 POST 傳送，並且有檔案上傳 enctype= -->
+    <!-- <form action='api/get/book/1' method='POST' enctype='multipart/form-data'>
+        <input type='text' name='book' value='POST'>
+        <input type='submit' value='送出'>
+    </form>
+    <br> -->
+    <h3>流程</h3>
+    <h4>A地:傳出結果 => B地:接收數值(陣列) => B地:計算 => B地:傳出結果 => C地:接收數值(陣列) </h4>
+    <h3>練習</h3>
+    <h4>BMI</h4>
+    <form action="computing.php" method="get">
+        <div class="bmi">
+            <div class="number">
+                <label for="">身高(公分):</label><input type="number" name="height" id="">
+            </div>
+            <br>
+            <div class="number">
+                <label for="">體重(公斤):</label><input type="number" name="weight" id="">
+            </div>
+            <br>
+            <div class="submit">
+                <input type="submit" value="計算">
+                <input type="reset" value="重填">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
